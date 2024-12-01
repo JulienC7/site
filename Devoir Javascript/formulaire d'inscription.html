@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<h1 style='margin-bottom: 20px;'>Inscrivez-vous :</h1>
+
+<body>
+    <div>
+        <div class="message-error"></div>
+        <ul></ul>
+        <div class="message-success"></div>
+        <form class="form" action="" method="POST" enctype="multipart/form-data">
+            <div>
+                <label for="Pseudo">Pseudo</label>
+                <input type="text" id="pseudo" placeholder="Votre pseudo">
+            </div>
+
+            <div>
+                <label for="Email">Email</label>
+                <input type="email" id="email" placeholder="Votre email">
+            </div>
+            <p style="margin-left: 20px"> Quel est votre sexe ?</p>
+            <div style="display: flex;">
+                <label><input type="radio" name="q1" value="Homme"> Homme</label>
+                <label><input type="radio" name="q1" value="Femme"> Femme</label>
+                <label><input type="radio" name="q1" value="Autre"> Autre</label>
+            </div>
+            <div>
+                <label for="password">Mot de passe</label>
+                <input type="password" placeholder="Votre mot de passe" id="password">
+            </div>
+            <div>
+                <label for="password">Confirmer votre mot de passe</label>
+                <input type="password" placeholder="Votre mot de passe" id="password2">
+            </div>
+            <button type="submit">S'inscrire</button>
+        </form>
+
+
+
+
+
+        <script src="formulaire.js"></script>
+</body>
+
+</html>

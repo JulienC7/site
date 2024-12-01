@@ -1,0 +1,495 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+
+.container {
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    color: black; /* Texte noir */
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+}
+
+/* Header avec logo à gauche et titre centré */
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-bottom: none;
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+    /* Suppression de la barre bleue */
+}
+
+.logo-header {
+    flex: 1;
+}
+.d-flex {
+    display: flex;
+}
+.align-items-center{
+    align-items: center;
+}
+.justify-content-evenly{
+    justify-content: space-evenly;
+}
+.logo {
+    width: 200px;
+    /* Taille du logo agrandie */
+    height: auto;
+    position: relative;
+}
+
+.titre-header {
+    flex: 3;
+    background-color: #313990;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-left: -200px;
+    /* Ajustement pour centrer le titre avec le logo */
+}
+
+.titre-header h1 {
+    margin: 0px;
+    font-size: 30px;
+}
+
+.titre-centré {
+    flex: auto;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    margin-left: -50px;
+
+}
+
+.introduction {
+    text-align: center;
+    margin: 15px 0;
+}
+
+.rectangle-jaune {
+    background-color: #efc450;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Transition fluide */
+}
+
+
+
+/* Barre de séparation verticale*/
+.barre-verticale {
+    width: 1px;
+    background-color: black;
+    margin: 0 5px;
+}
+
+/* Barre de séparation horizontale */
+.barre-horizontale {
+    width: 50%;
+    height: 1px;
+    /* Réduction de la hauteur de la barre */
+    background-color: black;
+    margin: 40px auto;
+    /* Espacement autour de la barre */
+    ;
+}
+
+
+.action {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.section-image {
+    flex: 1;
+    text-align: center;
+}
+
+.image-central {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin: 20px 0;
+}
+
+.text-section {
+    flex: 2;
+    padding-left: 20px;
+    font-size: 18px;
+    /* Augmenter la taille de la police pour les paragraphes */
+    line-height: 1.6;
+    /* Augmenter l'espacement entre les lignes pour une meilleure lisibilité */
+}
+
+.h2,
+.h3 {
+    color: #000000;
+}
+
+h3 {
+    margin-top: 15px;
+}
+.inscription-btn {
+ top: 30px;
+ right: 92px;
+ position: absolute;
+ color: black;
+}
+.form {
+    border: 1px solid #313990;
+   margin-left : 50px;
+   margin-right: 150px;
+}
+.form > div {
+    margin: 30px 20px;
+}
+
+
+
+.container-bouton {
+    text-align: center;
+    /* Centre bouton */
+    margin: 20px 0;
+    /* Espacement autour du bouton */
+}
+
+.en-savoir-plus {
+    background-color: #efc450;
+    color: black;
+    padding: 10px 50px;
+    text-decoration: none;
+    /* Supprime le soulignement du lien */
+    border-radius: 5px;
+    /* Coin du bouton arrondis */
+    font-size: 20px;
+}
+
+.en-savoir-plus:hover {
+    background-color: #ddb64a;
+    /* Couleur de fond lors du survol */
+}
+
+.rectangle-bleu {
+    background-color: #313990;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    /* Espace entre les images */
+}
+
+.image-container img {
+    width: 50%;
+    /* Fixe une largeur égale pour les deux images */
+    height: 400px;
+    /* Fixe une hauteur identique pour les deux images */
+    object-fit: cover;
+    /* Maintient les proportions tout en remplissant la zone */
+    border-radius: 8px;
+}
+
+.footer {
+    background-color: #d3d3d3;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid #ccc;
+}
+
+/* Conteneur pour les colonnes de texte */
+.footer-text {
+    display: flex;
+    gap: 50px;
+    /* Espacement entre les colonnes */
+}
+
+/* Style des liens texte */
+.footer-text div {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-text a {
+    color: #000;
+    text-decoration: none;
+    margin-bottom: 5px;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
+
+/* Barre de séparation verticale */
+.separateur {
+    width: 1px;
+    height: 80px;
+    background-color: #000;
+    margin-left: 0px;
+}
+
+.icone-rs {
+    display: flex;
+    gap: 20px;
+    /* Espace entre les icônes */
+    margin-right: 100px;
+}
+
+.icone-rs img {
+    width: 100px;
+    height: 100px;
+}
+
+.description h2 {
+    margin-top: 0;
+    font-size: 18px;
+    text-align: center;
+}
+
+.bloc-texte {
+    width: 1000px;
+    margin: 20px auto;
+    padding: 10px;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; /* Organise les éléments verticalement */
+        align-items: center; /* Centre les éléments */
+    }
+    .titre-header {
+        margin-left: 0; /* Supprime le décalage sur les petits écrans */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo {
+        width: 120px; /* Réduit la taille du logo pour les très petits écrans */
+    }
+    .titre-header h1 {
+        font-size: 20px; /* Ajuste la taille du texte */
+    }
+}
+@media (max-width: 768px) {
+    .rectangle-jaune {
+        flex-direction: column; /* Passe de horizontal à vertical */
+        text-align: center; /* Centre le texte pour une meilleure lisibilité */
+    }
+    .barre-verticale {
+        display: none; /* Supprime les barres verticales sur petit écran */
+    }
+}
+@media (max-width: 768px) {
+    .section-image img {
+        max-width: 100%; /* L'image occupe toute la largeur disponible */
+        height: auto; /* Conserve les proportions */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-container img {
+        width: 100%; /* Les images s'empilent et occupent toute la largeur */
+        margin-bottom: 20px; /* Ajoute de l'espace entre les images */
+    }
+}
+
+.dark-mode-btn {
+    background-color: #313990;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.dark-mode-btn:hover {
+    background-color: #575fcf;
+}
+
+
+.dark-mode {
+    background-color: #272626;
+    color: white;
+}
+
+
+.dark-mode .rectangle-jaune {
+    background-color: #1b1f3b;
+    color: white;
+}
+.dark-mode .h2 .h3 {
+    color: white;
+
+}
+.dark-mode .bloc-texte {
+    color: white;
+
+}
+.dark-mode .titre-centré {
+    color: white;
+
+}
+.dark-mode .barre-horizontale {
+    background-color: white;
+}
+
+.dark-mode .rectangle-bleu {
+    background-color: #1b1f3b;
+}
+
+.dark-mode .en-savoir-plus {
+    background-color: #313990;
+    color: white;
+}
+
+.dark-mode .footer {
+    background-color: #1b1f3b;
+    color: white;
+    
+}
+
+.dark-mode .footer a {
+    color: #ccc;
+}
+.dark-mode .h4 {
+    color: white;
+}
+
+.dark-mode .container {
+    background-color: rgb(50, 50, 50); 
+    color: white; 
+}
+#dark-mode-toggle svg{
+    fill: var(--primary-color);
+}
+#dark-mode-toggle svg:last-child{
+    display: none;
+}
+.dark-mode #dark-mode-toggle svg:first-child{
+    display: none;
+}
+.dark-mode #dark-mode-toggle svg:last-child{
+    display: block;
+}
+.dark-mode .inscription-btn {
+    color: white;
+}
+
+.tab-active {
+    background-color: #efc450; 
+    color: #000;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+.active {
+    display: block;
+}
+
+
+.input-error {
+    border : 1px solid red;
+}
+.input-ok {
+    border: 1px solid green;
+}
+
+
+*{
+    font-size: 16px;
+    font-family: sans-serif;
+    margin: 0;
+}
+
+body{
+    width: 80%;
+    margin: 80px auto;
+}
+
+
+label{
+    display: block;
+    margin-bottom: 8px;
+}
+
+input {
+    height: 20px;
+    width: 40%
+}
+
+button {
+    margin-left: 20px;
+    margin-bottom: 30px;
+    padding: 10px 32px;
+    cursor: pointer;
+}
+
+.message-error {
+    border: 1px solid red;
+    color: red;
+    background-color: red;
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none
+}
+.message-error.visible {
+    display: block;
+}
+.message-success {
+    border: 1px solid rgb(212,42,0,1);
+    color:rgb(212,42,0);
+    background-color: rgba(113,212,0,0.4);
+    padding: 16px 32px;
+    margin-bottom: 20px;
+    display: none;
+}
+
+.success {
+    border: 2px solid green;
+    background-color: hsl(120, 100%, 95%); 
+    color: black;
+}
+.input-error {
+    border: 2px solid red;
+    background-color: rgb(250, 223, 223); 
+    color: black; 
+}
+.input-success {
+    border: 2px solid green;
+    background-color: rgb(224, 253, 224); 
+    color: black;
+}
